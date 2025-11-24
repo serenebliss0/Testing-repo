@@ -1,4 +1,5 @@
 use std::io;
+use num::integer::gcd;
 fn main()
 {
 
@@ -62,7 +63,12 @@ pub fn number_to_fraction()
         let numerator = format!("{}{}",int_part, frac_part);
         let denominator = 10u64.pow(frac_part.len() as u32);
 
-        println!("The number {} can actually be written as {}/{}", number, numerator, denominator);
+        let divisor = gcd(numerator.parse::<u64>().unwrap(), denominator);
+
+        let reduced_numerator = numerator.parse::<u64>().unwrap() / divisor;
+        let reduced_denominator = denominator / divisor;
+
+        println!("The number {} can actually be written as {}/{}", number, reduced_numerator, reduced_denominator);
     }
     else
     {
