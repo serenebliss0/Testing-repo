@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "YiqQGVB5Y60=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\learning_databases\\learning_databases.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Semire\\.nuget\\packages\\dotenv.net\\4.0.0\\dotenv.net.4.0.0.nupkg.sha512",
+    "C:\\Users\\Semire\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Semire\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Semire\\.nuget\\packages\\npgsql\\9.0.4\\npgsql.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

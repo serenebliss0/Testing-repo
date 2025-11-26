@@ -92,3 +92,6 @@ is_present <- grepl("H", str)
 if (is_present == TRUE) {
   print("The letter 'H' is present in the string.")
 }
+
+tail('students_scores.csv')
+data <- read.csv("students_scores.csv")

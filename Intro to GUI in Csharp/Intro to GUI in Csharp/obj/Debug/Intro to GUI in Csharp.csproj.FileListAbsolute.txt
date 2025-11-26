@@ -1,0 +1,16 @@
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\bin\Debug\Intro to GUI in Csharp.exe.config
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\bin\Debug\Intro to GUI in Csharp.exe
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\bin\Debug\Intro to GUI in Csharp.pdb
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp.csproj.AssemblyReference.cache
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\MainWindow.g.cs
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\App.g.cs
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp_MarkupCompile.cache
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp_MarkupCompile.lref
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\MainWindow.baml
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp.g.resources
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro_to_GUI_in_Csharp.Properties.Resources.resources
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp.csproj.GenerateResource.cache
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp.csproj.CoreCompileInputs.cache
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp.exe
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp.pdb
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Intro to GUI in Csharp\Intro to GUI in Csharp\obj\Debug\Intro to GUI in Csharp.exe.config

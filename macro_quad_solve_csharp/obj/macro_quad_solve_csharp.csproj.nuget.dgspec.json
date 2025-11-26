@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\macro_quad_solve_csharp.csproj": {}
+    "C:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\macro_quad_solve_csharp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\macro_quad_solve_csharp.csproj": {
+    "C:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\macro_quad_solve_csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\macro_quad_solve_csharp.csproj",
+        "projectUniqueName": "C:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\macro_quad_solve_csharp.csproj",
         "projectName": "macro_quad_solve_csharp",
-        "projectPath": "c:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\macro_quad_solve_csharp.csproj",
+        "projectPath": "C:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\macro_quad_solve_csharp.csproj",
         "packagesPath": "C:\\Users\\Semire\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\obj\\",
+        "outputPath": "C:\\Users\\Semire\\Downloads\\My Programming Journey 2\\Rust Practice 1\\Testing-repo\\macro_quad_solve_csharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
