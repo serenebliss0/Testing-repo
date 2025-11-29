@@ -1,0 +1,15 @@
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\bin\Debug\net9.0\Autofilecreate.exe
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\bin\Debug\net9.0\Autofilecreate.deps.json
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\bin\Debug\net9.0\Autofilecreate.runtimeconfig.json
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\bin\Debug\net9.0\Autofilecreate.dll
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\bin\Debug\net9.0\Autofilecreate.pdb
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\Autofilecreate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\Autofilecreate.AssemblyInfoInputs.cache
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\Autofilecreate.AssemblyInfo.cs
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\Autofilecreate.csproj.CoreCompileInputs.cache
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\Autofilecreate.sourcelink.json
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\Autofilecreate.dll
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\refint\Autofilecreate.dll
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\Autofilecreate.pdb
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\Autofilecreate.genruntimeconfig.cache
+C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\Autofilecreate\obj\Debug\net9.0\ref\Autofilecreate.dll
