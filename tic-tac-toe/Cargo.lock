@@ -20,13 +20,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "guessing_game"
-version = "0.1.0"
-dependencies = [
- "rand",
-]
-
-[[package]]
 name = "libc"
 version = "0.2.177"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -98,6 +91,13 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
+]
+
+[[package]]
+name = "tic-tac-toe"
+version = "0.1.0"
+dependencies = [
+ "rand",
 ]
 
 [[package]]
