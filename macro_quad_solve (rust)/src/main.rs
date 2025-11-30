@@ -1,3 +1,4 @@
+use core::prelude;
 use std::io;
 
 //Quadratic Equation solver
@@ -14,7 +15,14 @@ pub fn solve_quadratics()
     //taking input from user
     println!("Enter coefficient a:");
     io::stdin().read_line(&mut a_input).expect("Failed to read line");
-    let a: f64 = a_input.trim().parse().expect("Please type a valid number");
+    let a: f64 = match a_input.trim().parse() {
+        Ok(a) => a,
+        Err(e) => {
+            println!("{}",e);
+            solve_quadratics();
+            return;
+        }
+    };
     
     if a == 0.00
     {
@@ -23,16 +31,31 @@ pub fn solve_quadratics()
     }
     println!("Enter coefficient b:");
     io::stdin().read_line(&mut b_input).expect("Failed to read line");
-    let b: f64 = b_input.trim().parse().expect("Please type a valid number");
+    let b: f64 = match b_input.trim().parse() {
+        Ok(b) => b,
+        Err(e) => {
+            println!("{}", e);
+            solve_quadratics();
+            return;
+        }
+
+    };
 
     println!("Enter coefficient c:");
     io::stdin().read_line(&mut c_input).expect("Failed to read line");
-    let c: f64 = c_input.trim().parse().expect("Please type a valid number");
+    let c: f64 = match c_input.trim().parse() {
+        Ok(c) => c,
+        Err (e) => {
+            println!("{}", e);
+            solve_quadratics();
+            return;
+        }
+    };
 
     println!("Confirm that a is {}, b is {} and c is {} by typing (e) and press enter!", a, b, c);
     let mut confirm_choice = String::new();
     io::stdin().read_line(&mut confirm_choice).expect("Failed to read line");
-    let confirm_choice = confirm_choice.trim();
+    let confirm_choice = confirm_choice.trim().to_lowercase();
 
     if confirm_choice != "e"
     {
@@ -86,13 +109,38 @@ pub fn solve_quadratics()
     let mut  option_1:String = input_1.trim().parse().expect("Enter y or n");
 
     //allows the user to input another equation as many times as they want
-    if option_1 != "y"
+    if option_1 == "y"
     {
-        println!("Goodbye");
-        break;
+       solve_roots();
     }
+    else
+     {
+        {
+            println!("What would you like to do?");
+            println!("1. Find the roots of an equation in the form ax^2 + bx + c\n2. Find the equation with two roots alpha and beta\n3. Find the equation with two complex roots\n4. Exit the program");
+    
+            let mut option = String::new();
+            io::stdin().read_line(&mut option).expect("Failed to read line");
+            let option:u8 = option.trim().parse().expect("Type in a valid number from the list");
+        
+            match (option)
+            {
+                1 => solve_quadratics(),
+                2 => solve_roots(),
+                3 => complex_roots(),
+                4 => {
+                    println!("Goodbye! Come back some other time!");
+                    break;
+                },
+                _ => break,
+            };
+            
+    
+        }
+    
    
 }
+    }
 }
 
 //this function will be very useful when trying convert a.b into a/b
@@ -110,7 +158,8 @@ fn to_fraction(x: f64) -> (i64, i64) {
         (x as i64, 1)
     }
 }
-//ill use this to find and equation from two roots!
+
+//ill use this to find an equation from two roots!
 pub fn solve_roots()
 {
     loop
@@ -120,12 +169,26 @@ pub fn solve_roots()
         //just gathering some root inputs
     let mut root_1 = String::new();
     io::stdin().read_line(&mut root_1).expect("Failed to read line");
-    let root_1:f64 = root_1.trim().parse().expect("Type in a valid number");
+    let root_1:f64 = match root_1.trim().parse() {
+        Ok(root_1) => root_1,
+        Err(e) => {
+            println!("{}", e);
+            solve_roots();
+            return;
+        }
+    };
 
     println!("What is root 2:");
     let mut root_2 = String::new();
     io::stdin().read_line(&mut root_2).expect("Failed to read line");
-    let root_2:f64 = root_2.trim().parse().expect("Type in a valid number");
+    let root_2:f64 = match root_2.trim().parse() {
+        Ok(root_2) => root_2,
+        Err(e) => {
+            println!("{}", e);
+            solve_roots();
+            return;
+        }
+    };
 
     let sum_of_roots = root_1 + root_2;
     let product_of_roots = root_1 * root_2;
@@ -158,7 +221,7 @@ let c =  c_num * (l / c_den);
 
     println!("The equation with roots {} and {} is", root_1, root_2);
     println!("x^2 -{}x + {} = 0", sum_of_roots, product_of_roots);
-println!("This is also written as: {}x^2 + {}x + {} = 0", a, b, c);
+    println!("This is also written as: {}x^2 + {}x + {} = 0", a, b, c);
 
 println!("Do you want to find the equation with another set of roots? y/n");
 
@@ -166,10 +229,33 @@ let mut option = String::new();
 io::stdin().read_line(&mut option).expect("Failed to read line");
 let option = option.trim();
 
-if option != "y"
+if option == "y"
 {
-    println!("Goodbye");
-    break;
+   solve_roots();
+}
+else {
+    {
+        println!("What would you like to do?");
+        println!("1. Find the roots of an equation in the form ax^2 + bx + c\n2. Find the equation with two roots alpha and beta\n3. Find the equation with two complex roots\n4. Exit the program");
+
+        let mut option = String::new();
+        io::stdin().read_line(&mut option).expect("Failed to read line");
+        let option:u8 = option.trim().parse().expect("Type in a valid number from the list");
+    
+        match (option)
+        {
+            1 => solve_quadratics(),
+            2 => solve_roots(),
+            3 => complex_roots(),
+            4 => {
+                println!("Goodbye! Come back some other time!");
+                break;
+            },
+            _ => break,
+        };
+        
+
+    }
 }
 
 }
@@ -187,13 +273,23 @@ fn main()
 
     let mut option = String::new();
     io::stdin().read_line(&mut option).expect("Failed to read line");
-    let option:u8 = option.trim().parse().expect("Type in a valid number from the list");
+    let option:u8 = match option.trim().parse() {
+        Ok(option) => option,
+        Err(e) => {
+            println!("{}", e);
+            main();
+            return;
+        }
+    };
 
     match (option)
     {
         1 => solve_quadratics(),
         2 => solve_roots(),
         3 => complex_roots(),
-        _ => println!("Enter a valid option brooo"),
+        _ => {
+            println!("Enter a valid option bro");
+            main();
+        },
     };
     }

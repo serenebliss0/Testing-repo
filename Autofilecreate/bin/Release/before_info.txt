@@ -1,0 +1,18 @@
+[Created by Semire Ajayi]
+Welcome to the AutoFileCreate Installer
+
+Thank you for choosing my little script  — a lightweight tool designed to help you easily create all your rust practice and project files and folders.
+This installer will guide you through the setup process.
+
+System Requirements
+
+Windows 10 or later
+
+64-bit system
+
+At least 5 MB of available storage
+
+License Notice
+This software is provided “as-is,” without any warranties or guarantees of performance. By installing, you agree that the author is not liable for any damages resulting from use.
+
+Click “Next” to continue with the installation.

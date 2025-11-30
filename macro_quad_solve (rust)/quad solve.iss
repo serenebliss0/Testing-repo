@@ -3,7 +3,7 @@
 ; Non-commercial use only
 
 #define MyAppName "Quadratic Solver by Semire"
-#define MyAppVersion "1.1.0"
+#define MyAppVersion "1.1.1"
 #define MyAppPublisher "Semire Designs and Animations"
 #define MyAppURL "https://github.com/serenebliss0/Testing-repo"
 #define MyAppExeName "macro_quad_solve.exe"
@@ -47,7 +47,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\macro_quad_solve (rust)\target\release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\macro_quad_solve (rust)\target\release\macro_quad_solve.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
