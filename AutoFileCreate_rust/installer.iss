@@ -3,7 +3,7 @@
 ; Non-commercial use only
 
 #define MyAppName "AutoFileCreate by Semire"
-#define MyAppVersion "2.0"
+#define MyAppVersion "2.1.0"
 #define MyAppPublisher "Semire Designs and Animations"
 #define MyAppURL "github.com/serenebliss0"
 #define MyAppExeName "autofilecreate.exe"
@@ -52,7 +52,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\AutoFileCreate_rust\target\release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\AutoFileCreate_rust\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+; Source: "C:\Users\Semire\Downloads\My Programming Journey 2\Rust Practice 1\Testing-repo\AutoFileCreate_rust\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
