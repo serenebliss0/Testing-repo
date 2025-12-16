@@ -5,7 +5,6 @@ use std::io::Write; //this has println's sister writeln!
 use std::io;
 use std::path::Path; //imma use this to check if file already exists
 use std::process::Command; //now imma use this to run some commandsss
-
 pub mod csv;
 pub mod docx;
 
@@ -15,7 +14,7 @@ fn main()
     //p.s. if the file already exists it ain't gonna run
 
     fs::create_dir_all("a/b/c").unwrap(); //creates nested folders
-    fs::create_dir_all("serenity/bliss/user0/memories/random/lol/sigh/long/ahh/directory/name");
+    fs::create_dir_all("serenity/bliss/user0/memories/random/lol/sigh/long/ahh/directory/name").unwrap();
 
     //now lets create some txtsss
 

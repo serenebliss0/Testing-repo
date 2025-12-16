@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("macro_quad_solve_csharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41c727e9475b88c239f06a86f83f2e1e815cd013")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4c66aa7f2ab59f4f9e9bbb70d1536e1856e1258")]
 [assembly: System.Reflection.AssemblyProductAttribute("macro_quad_solve_csharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("macro_quad_solve_csharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

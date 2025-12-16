@@ -3,3 +3,4 @@
 .env
 Makefile.*
 target*
+banking-sim
