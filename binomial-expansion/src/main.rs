@@ -138,7 +138,13 @@ pub fn collect_all_pos()
         };
 
         println!("Your equation was ({} + {}) ^ {}", a_val, b_val, n_val);
+        if a_val <= u64::MAX && b_val <=u64::MAX && n_val <= u64::MAX
+        {
         let final_answer = do_binomial_two_terms(a_val, b_val, n_val);
         println!("After expansion, the final answer is {}", final_answer);
-
+        }
+        else
+        {
+            println!("Lol my calculator cannot handle values this crazy");
+        }
     }
