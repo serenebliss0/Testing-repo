@@ -10,7 +10,8 @@ impl IdGenerator {
         Self { counter: 0 }
     }
 
-    pub fn next(&mut self) -> String {
+    pub fn next(&mut self) -> String 
+    {
         let id = format!("224{:07}", self.counter);
         self.counter += 1;
         id

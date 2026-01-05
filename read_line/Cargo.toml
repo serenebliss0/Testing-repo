@@ -1,0 +1,10 @@
+[package]
+name = "semire_read"
+version = "0.2.0"
+authors = ["Semire Ajayi <oluwasemire.ajayi@pau.edu.ng>"]
+edition = "2024"
+description = "A safe, easy-to-use module for reading integers, floats, and strings from stdin in Rust."
+license = "MIT"
+
+
+[dependencies]
