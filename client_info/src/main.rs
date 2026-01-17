@@ -111,7 +111,7 @@ pub fn sibling_logic(sibling_count:u8)
                     },
                     2 => {
                         println!("What year level is sibling {}", i);
-                        secondary_school = read_line();
+                        year_level = read_line_as_u8();
             
                     },
                     _ => {println!("Enter a valid option")}

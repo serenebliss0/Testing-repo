@@ -1,0 +1,9 @@
+[package]
+name = "semire_core"
+version = "0.1.0"
+edition = "2021"
+description = "An extension to my former semire_read crate now with more functionality"
+license = "MIT"        # or "Apache-2.0", etc
+repository = "https://github.com/serenebliss0/Testing-repo/semire-core-utils"
+
+[dependencies]
