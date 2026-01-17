@@ -18,7 +18,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-serenity-utils = "0.1.0"
+semire-core = "0.1.0"
 ```
 
 ---
@@ -30,7 +30,7 @@ serenity-utils = "0.1.0"
 The `Readable` trait allows you to read user input into **any type that implements `FromStr`**.
 
 ```rust
-use serenity_utils::Readable;
+use semire_core::Readable;
 
 let age: u32 = Readable::read();
 let username: String = Readable::read();
@@ -49,7 +49,7 @@ Behavior:
 Create a file with optional overwrite behavior:
 
 ```rust
-use serenity_utils::create_file;
+use semire_core::create_file;
 
 // Overwrite if the file already exists
 create_file("data.txt", true)?;
@@ -65,7 +65,7 @@ create_file("data.txt", false)?;
 Write text data to a file with append or overwrite control:
 
 ```rust
-use serenity_utils::write_data;
+use semire_core::write_data;
 
 write_data(
     "clients.serenity",
@@ -87,7 +87,7 @@ Notes:
 Read and print the contents of a file:
 
 ```rust
-use serenity_utils::read_data;
+use semire_core::read_data;
 
 read_data("clients.serenity")?;
 ```
@@ -103,7 +103,7 @@ Details:
 ## Full Example
 
 ```rust
-use serenity_utils::{Readable, create_file, write_data, read_data};
+use semire_core::{Readable, create_file, write_data, read_data};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Enter your name:");
