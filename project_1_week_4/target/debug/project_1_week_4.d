@@ -1,1 +1,0 @@
-C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\project_1_week_4\target\debug\project_1_week_4.exe: C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\project_1_week_4\src\main.rs

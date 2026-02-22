@@ -1,1 +1,0 @@
-C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\guessing_game\ (rust)\target\debug\guessing_game.exe: C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\guessing_game\ (rust)\src\main.rs

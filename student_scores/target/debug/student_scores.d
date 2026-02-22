@@ -1,1 +1,0 @@
-C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\student_scores\target\debug\student_scores.exe: C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\student_scores\src\main.rs

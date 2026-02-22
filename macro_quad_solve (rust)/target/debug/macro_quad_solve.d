@@ -1,1 +1,0 @@
-C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\macro_quad_solve\ (rust)\target\debug\macro_quad_solve.exe: C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\macro_quad_solve\ (rust)\src\main.rs

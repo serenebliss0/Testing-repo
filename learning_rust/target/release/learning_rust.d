@@ -1,1 +1,0 @@
-C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\learning_rust\target\release\learning_rust.exe: C:\Users\Semire\Downloads\My\ Programming\ Journey\ 2\Rust\ Practice\ 1\Testing-repo\learning_rust\src\main.rs
