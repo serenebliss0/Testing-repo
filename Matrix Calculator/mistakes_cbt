@@ -1,0 +1,372 @@
+/*
+System.Console.WriteLine("What operation would you like to perform on these matrices?");
+System.Console.WriteLine("1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Transpose \n 5. Determinant \n 6. Inverse \n 7. Exit");
+int operation = Convert.ToInt32(Console.ReadLine());
+
+
+//message to future semire. I think using methods for this is much easier and much faster. Update when necessary from here.
+
+if (operation <1 || operation > 7)
+{
+    System.Console.WriteLine("Invalid operation. Please enter a number between 1 and 7.");
+    return;
+}
+
+if (operation == 1)
+{
+
+    if (rows != columns)
+    {
+        System.Console.WriteLine("Addition is only possible for matrices of the same size. Please enter a matrix of the same size.");
+        return;
+    }
+    else 
+    {
+        System.Console.WriteLine("You have chosen addition. Please enter the second matrix.");
+    }
+
+
+}
+else if (operation == 2)
+{
+    System.Console.WriteLine("You have chosen subtraction. Please enter the second matrix.");
+    // Code for subtraction
+}
+else if (operation == 3)
+{
+    System.Console.WriteLine("You have chosen multiplication. Please enter the second matrix.");
+    // Code for multiplication
+}
+else if (operation == 4)
+{
+    System.Console.WriteLine("You have chosen transpose. Transposing the matrix...");
+    // Code for transpose
+}
+else if (operation == 5)
+{
+    System.Console.WriteLine("You have chosen determinant. Calculating determinant...");
+    // Code for determinant
+}
+else if (operation == 6)
+{
+    System.Console.WriteLine("You have chosen inverse. Calculating inverse...");
+    // Code for inverse
+}
+else if (operation == 7)
+{
+    System.Console.WriteLine("Exiting the program. Goodbye!");
+    return;
+}
+
+//I retried this using switch statement but it didn't work. I will try again later. I think this is a good way to do it.
+
+switch (operation)
+    {
+        case 1:
+            if (rows != columns)
+            {
+                System.Console.WriteLine("Addition is only possible for matrices of the same size. Please enter a matrix of the same size.");
+                break;
+            }
+            else
+            {
+                System.Console.WriteLine("You have chosen addition. Please enter the second matrix.");
+                // Code for addition
+            }
+            break;
+
+        case 2:
+            System.Console.WriteLine("You have chosen subtraction. Please enter the second matrix.");
+            // Code for subtraction
+            break;
+
+        case 3:
+            System.Console.WriteLine("You have chosen multiplication. Please enter the second matrix.");
+            // Code for multiplication
+            break;
+
+        case 4:
+            System.Console.WriteLine("You have chosen transpose. Transposing the matrix...");
+            // Code for transpose
+            break;
+
+        case 5:
+            System.Console.WriteLine("You have chosen determinant. Calculating determinant...");
+            // Code for determinant
+            break;
+
+        case 6:
+            System.Console.WriteLine("You have chosen inverse. Calculating inverse...");
+            // Code for inverse
+            break;
+
+        case 7:
+            System.Console.WriteLine("Exiting the program. Goodbye!");
+            return; // Exit the program
+    }
+
+
+//I've narrowed down this problem to this block of code
+
+/*
+System.Console.WriteLine("What operation would you like to perform on these matrices?");
+System.Console.WriteLine("1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Transpose \n 5. Determinant \n 6. Inverse \n 7. Exit");
+int operation = Convert.ToInt32(Console.ReadLine());
+
+
+
+//message to future semire. I think using methods for this is much easier and much faster. Update when necessary from here.
+
+  if (operation < 1 || operation > 7)
+    {
+        System.Console.WriteLine("Invalid operation. Please enter a number between 1 and 7.");
+        continue; // Skip to the next matrix
+    }
+
+
+//Copilot suggests using a while loop instead
+//It turns out I just had to move that block off the awfully long for loop. Its working now, although i hope i'll be able to access the matrix later on. I think I can do that by using a method to return the matrix and then calling that method in the switch statement. I will try that next time.
+
+
+
+//here's my code soo far
+
+//Matrix Calculator
+
+using System.Collections;
+
+System.Console.WriteLine("Welcome to the Matrix Calculator!");
+System.Console.WriteLine("This program will help you perform various operations on matrices.");
+System.Console.WriteLine("How many matrices are you working with?");
+
+int matrixCount = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 1; i<=matrixCount; i++)
+{
+    System.Console.WriteLine($"Please enter the number of rows for matrix {i}:");
+    int rows = Convert.ToInt32(Console.ReadLine());
+
+    System.Console.WriteLine($"Please enter the number of columns for matrix {i}:");
+    int columns = Convert.ToInt32(Console.ReadLine());
+
+if (rows <= 0 || columns <= 0)
+{
+    System.Console.WriteLine("Invalid input. Please enter positive integers for rows and columns.");
+    continue;
+}
+
+if (rows == 2 && columns == 2)
+{
+    System.Console.WriteLine("This is a 2x2 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    
+}
+else if (rows ==1 && columns ==1)
+{
+    System.Console.WriteLine("This is a 1x1 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+        
+    }
+    
+}
+else if (rows == 3 && columns == 3)
+{
+    System.Console.WriteLine("This is a 3x3 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    
+}
+
+else if (rows == 1 && columns == 2)
+{
+    System.Console.WriteLine("This is a 1x2 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+
+    
+}
+else if (rows == 2 && columns == 1)
+{
+    System.Console.WriteLine("This is a 2x1 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    
+}
+
+else if (rows == 1 && columns == 3)
+{
+    System.Console.WriteLine("This is a 1x3 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    
+}
+else if (rows == 3 && columns == 1)
+{
+    System.Console.WriteLine("This is a 3x1 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    
+}
+else if (rows == 2 && columns == 3)
+{
+    System.Console.WriteLine("This is a 2x3 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    
+}
+else if (rows == 3 && columns == 2)
+{
+    System.Console.WriteLine("This is a 3x2 matrix. You can perform operations like addition, subtraction, and multiplication.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    
+}
+
+else
+{
+    System.Console.WriteLine("This is a matrix with more than 3 rows or columns. You can perform basic operations like addition and subtraction.");
+    
+    int[,] matrix = new int[rows, columns];
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < columns; c++)
+        {
+            System.Console.WriteLine($"Please enter the element at position ({r+1}, {c+1}):");
+            matrix[r, c] = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+}
+
+
+
+}
+
+System.Console.WriteLine("What operation would you like to perform on this matrix?");
+System.Console.WriteLine("1. Addition \n2. Subtraction \n3. Multiplication \n4. Transpose \n5. Determinant \n6. Inverse \n7. Exit");
+int operation = Convert.ToInt32(Console.ReadLine());
+
+switch (operation)
+{
+    case 1:
+        System.Console.WriteLine("You have chosen addition.");
+        
+        System.Console.WriteLine();
+
+    break;
+
+    case 2:
+        System.Console.WriteLine("You have chosen subtraction.");
+        // Code for subtraction
+    break;
+
+    case 3:
+        System.Console.WriteLine("You have chosen multiplication.");
+        // Code for multiplication
+    break;
+
+    case 4:
+        System.Console.WriteLine("You have chosen transpose.");
+        // Code for transpose
+    break;
+
+    case 5:
+        System.Console.WriteLine("You have chosen determinant.");
+        // Code for determinant
+    break;
+
+    case 6:
+        System.Console.WriteLine("You have chosen inverse.");
+        // Code for inverse
+    break;
+
+    case 7:
+
+        System.Console.WriteLine("Exiting the program. Goodbye!");
+    break;
+
+
+    }
+*/

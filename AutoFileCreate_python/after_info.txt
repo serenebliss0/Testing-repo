@@ -1,0 +1,7 @@
+YAAAY. AutoFileCreate is installed!
+
+Go ahead, click Finish, launch it, and forget about manually creating your COS102 folders.
+Thank you for installing my lil creation — go slay your python practice.
+
+If you need any help, check the Releases section in my GitHub repository:
+https://github.com/serenebliss0/Testing-repo
