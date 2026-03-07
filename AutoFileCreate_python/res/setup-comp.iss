@@ -3,7 +3,7 @@
 ; =====================================================
 
 #define MyAppName "AutoFileCreate (for Jupyter Notebook)"
-#define MyAppVersion "3.0"
+#define MyAppVersion "3.1.0"
 #define MyAppPublisher "Semire Designs and Animations"
 #define MyAppURL "https://github.com/serenebliss0"
 #define MyAppExeName "autofilecreate-py.exe"
@@ -48,8 +48,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 
-Source: "C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\dist\autofilecreate-py.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\autofilecreate-py.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\compiled\autofilecreate-py.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\res\autofilecreate-py.ico"; DestDir: "{app}"; Flags: ignoreversion
 
 
 [Icons]
