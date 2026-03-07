@@ -1,8 +1,0 @@
-[package]
-name = "obfuscate"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-cryptify = "3.1.1"
-semire_read = "0.2.0"

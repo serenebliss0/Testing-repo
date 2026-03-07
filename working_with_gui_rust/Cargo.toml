@@ -1,7 +1,0 @@
-[package]
-name = "working_with_gui_rust"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-slint = "1.4.0"
