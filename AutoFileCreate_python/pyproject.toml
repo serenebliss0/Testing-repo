@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autofilecreate"
+version = "3.0.0"
+description = "Automated file creator for Jupyter notebook projects"
+authors = [{name = "Semire Ajayi (serenebliss0)"}]
+dependencies = []
+
+[project.scripts]
+autofilecreate = "autofilecreate.main:main"

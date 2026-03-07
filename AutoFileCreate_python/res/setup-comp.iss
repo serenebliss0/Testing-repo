@@ -30,10 +30,10 @@ OutputBaseFilename=autofilecreate-py
 SolidCompression=yes
 WizardStyle=modern dynamic windows11
 
-SetupIconFile=C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\autofilecreate-py.ico
+SetupIconFile=C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\res\autofilecreate-py.ico
 
-InfoBeforeFile=C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\before_info.txt
-InfoAfterFile=C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\after_info.txt
+InfoBeforeFile=C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\res\before_info.txt
+InfoAfterFile=C:\Users\Semire\Downloads\My Programming Journey 3\Testing-repo\AutoFileCreate_python\res\after_info.txt
 
 PrivilegesRequired=admin
 
