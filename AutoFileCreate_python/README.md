@@ -169,11 +169,7 @@ autofilecreate --config
 
 ---
 
-<video width="1280" height="280" controls>
-  <source src="demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  
-</video>
+[![Demo](demo_thumbnail.png)](demo.mp4)
 
 ## Project Structure After Running
 
