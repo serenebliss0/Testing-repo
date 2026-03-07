@@ -13,13 +13,17 @@ Supports:
 ## 🚀 Installation
 
 ### Recommended (Cross-Platform)
+Ensure you have python installed on your device
 
 Install via pip:
 
 ```bash
 pip install autofilecreate
 ```
-
+or run:
+```bash
+pipx install autofilecreate
+```
 Then run:
 
 ```bash
@@ -30,7 +34,7 @@ autofilecreate
 
 ### 🪟 Windows (Installer Version)
 
-Download from the [Releases](https://github.com/serenebliss0/Testing-repo/releases/tag/AutoFileCreate-v3.0.0) section:
+Download from the [Releases](https://github.com/serenebliss0/Testing-repo/releases/tag/AutoFileCreate.v3.1.0) section:
 
 ```
 autofilecreate-py.exe
@@ -69,7 +73,7 @@ autofilecreate
 **Option 2 — From Source**
 
 ```bash
-[Go to Releases](https://github.com/serenebliss0/Testing-repo/releases/download/AutoFileCreate-v3.0.0/autofilecreate-3.0.0.tar.gz)
+[Go to Releases](https://github.com/serenebliss0/Testing-repo/releases/download/AutoFileCreate.v3.1.0/autofilecreate-3.1.0.tar.gz)
 
 # download the .tar.gz file
 # extract it
