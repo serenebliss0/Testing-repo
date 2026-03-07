@@ -3,24 +3,35 @@ import argparse;
 from pathlib import Path;
 import subprocess;
 import time;
-import sys;
+#import sys;
+import platform;
+#from typing import Optional;
+from platformdirs import user_config_dir;
 
-appdata = os.environ.get("APPDATA")
-if not appdata:
-    raise Exception("APPDATA environment variable not found!")
+system = platform.system();
+#print(f"Platform detected: {system}");
 
-APP_DATA = Path(appdata) / "AutoFileCreate"
+APP_DATA = Path(user_config_dir("AutoFileCreate"));
 APP_DATA.mkdir(parents=True, exist_ok=True)
 config_file = APP_DATA / "config.serenity"
 
 def create_config():
-    config_file = APP_DATA/ "config.serenity"
-    config_file.touch();
+    #config_file.touch();
     print("Enter the directory path for your COS102 folder");
     directory_path = input();
     config_file.write_text(directory_path);
+    time.sleep(0.5);
+
+def open_config():
+    if system == "Windows":
+        os.startfile(config_file);
+    elif system == "Darwin":
+        subprocess.run(["open", str(config_file)]);
+    else:
+        subprocess.run(["xdg-open", str(config_file)]);
 
 def main():
+
     parser = argparse.ArgumentParser(description="AutoFileCreate (Python) for Jupyter Notebook");
     parser.add_argument("--week", type=int, required=False);
     parser.add_argument("--config", action="store_true");
@@ -33,13 +44,15 @@ def main():
     # todo!("Check if usr wants to open config.serenity")
 
     if args.config:
-        if config_file.exists():
-            os.startfile(config_file);
-    else:
-        print("Config file doesn't exist yet! Creating a new one");
-        create_config();
-        # make sure it exists, if not create it
+        if not config_file.exists():
+            print("Config file doesn't exist yet!\nCreating a new one");
+            create_config();
 
+        print("Config saved. Reloading...");
+        directory_path = config_file.read_text().strip();
+        open_config();
+        return;
+    
 
     directory_path = "";
     current_week = "";
@@ -49,24 +62,25 @@ def main():
     if config_file.exists():
             with open(config_file, "r") as config:
                 directory_path = config.read().strip();
-                dir = Path(directory_path);
+                config_dir = Path(directory_path);
             print("CONFIG PATH:", directory_path);
             
-            if not dir.exists():
+            if not config_dir.exists():
                 print("The path in config does not exist!");
                 print("Please enter the correct path to your COS102 folder in config.serenity");
-                os.startfile("config.serenity");
+                open_config();
                 return;
 
-            if not dir.is_dir():
+            if not config_dir.is_dir():
                 print("The path in config is not a directory!");
                 print("Please update your COS102 directory in config.serenity");
-                os.startfile("config.serenity");
+                open_config();
                 return;
 
     else:
         print("Config doesn't exist! Creating a new one");
         create_config();
+        directory_path = config_file.read_text().strip();
 
     
     # check if user passes a value for week
