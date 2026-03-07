@@ -30,7 +30,7 @@ autofilecreate
 
 ### 🪟 Windows (Installer Version)
 
-Download from the Releases section:
+Download from the [Releases](https://github.com/serenebliss0/Testing-repo/releases/tag/AutoFileCreate-v3.0.0) section:
 
 ```
 autofilecreate-py.exe
@@ -47,7 +47,7 @@ It will:
 After installation:
 
 ```powershell
-autofilecreate
+autofilecreate-py
 ```
 
 ---
@@ -69,8 +69,10 @@ autofilecreate
 **Option 2 — From Source**
 
 ```bash
-git clone https://github.com/serenebliss0/Testing-repo/releases/
+[Go to Releases](https://github.com/serenebliss0/Testing-repo/releases/download/AutoFileCreate-v3.0.0/autofilecreate-3.0.0.tar.gz)
+
 # download the .tar.gz file
+# extract it
 cd AutoFileCreate
 pip install .
 ```
@@ -169,7 +171,9 @@ autofilecreate --config
 
 ---
 
-[![Demo](demo_thumbnail.png)](demo.mp4)
+
+https://github.com/user-attachments/assets/0f96265d-58a1-4db7-8a1f-92cdc90111f0
+
 
 ## Project Structure After Running
 
