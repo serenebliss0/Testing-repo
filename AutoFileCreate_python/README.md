@@ -54,7 +54,7 @@ After installation:
 autofilecreate-py
 ```
 
-###Please note, the command is `autofilecreate-py` on Windows (with the exe) and just `autofilecreate` if you use pip
+### Please note, the command is `autofilecreate-py` on Windows (with the exe) and just `autofilecreate` if you use pip
 ---
 
 ### 🍎 macOS
