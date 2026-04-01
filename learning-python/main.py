@@ -138,3 +138,22 @@ my_function(list);
 print("List outside function", list);
 
 print(bool(""))
+
+x = 5
+
+print(x);
+
+x = 10
+
+print(x);
+
+x = 10
+
+def change():
+    global x
+    x = 20
+
+
+change()
+
+print(x)
