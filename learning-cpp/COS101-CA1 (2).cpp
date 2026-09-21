@@ -24,7 +24,9 @@ double calculateAmount(double principal, double rate, double time){
 int main(){
 
     double principal, rate, time;
+    char userChoice = 'n';
 
+    while(true){
     cout << "Please enter your principal amount\n";
     cin >> principal;
 
@@ -37,6 +39,16 @@ int main(){
     double amount = calculateAmount(principal, rate, time);
 
     cout << "The total amount is " << amount << "\n";
-    cout << "The compound interest is " << (principal + amount);
-    
+    cout << "The compound interest is " << (amount - principal);
+
+    cout << "\nDo you want to run the program again?";
+    cout << "\nEnter y to rerun, n to stop\n";
+
+    cin >> userChoice;
+
+    if (userChoice == 'n'){
+        break;
+    }
+    }
+    return 0;
 }
