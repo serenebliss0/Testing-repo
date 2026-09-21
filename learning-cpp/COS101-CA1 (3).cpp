@@ -27,6 +27,7 @@ int main(){
     char userChoice;
 
     do{
+
     //Table headers
     cout << "Code" << '\t' << "Item" << '\t' << "Price" << '\n';
 
@@ -62,7 +63,7 @@ int main(){
     double totalCost = userCart[0].itemPrice * quantity;
 
     if (totalCost > 500000){
-        totalCost = static_cast<double>(totalCost - (totalCost * (discountPercent / 100.0)));
+        totalCost = (totalCost - (totalCost * (discountPercent / 100.0)));
     }
 
     cout << "The final amount payable is " << fixed << setprecision(2) << totalCost;
